@@ -3,17 +3,27 @@ import React from 'react'
 const About = () => {
   return (
     <>
-    {/* Icon Blocks */}
-    <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 items-center gap-2">
-        {/* Icon Block */}
-        <a
-          className="group flex flex-col justify-center hover:bg-gray-50 focus:outline-none focus:bg-gray-50 rounded-xl p-4 md:p-7 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
-          href="#"
-        >
-          <div className="flex justify-center items-center size-12 bg-blue-600 rounded-xl">
+    <>
+  {/* Icon Blocks */}
+  <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <div className="max-w-2xl mx-auto">
+      {/* Grid */}
+      <div className="grid gap-12">
+        <div>
+          <h2 className="text-3xl text-gray-800 font-bold lg:text-4xl dark:text-white">
+            About Us
+          </h2>
+          <p className="mt-3 text-gray-800 dark:text-neutral-400">
+          Marketplace UI/UX focuses on creating an intuitive, visually appealing, and user-friendly environment
+           that facilitates effective communication, seamless transactions, and overall satisfaction for buyers and sellers.
+           A well-designed UI/UX can significantly impact the success and growth of a marketplace by enhancing user satisfaction, increasing engagement, and fostering user trust. 
+          </p>
+        </div>
+        <div className="space-y-6 lg:space-y-10">
+          {/* Icon Block */}
+          <div className="flex gap-x-5 sm:gap-x-8">
             <svg
-              className="shrink-0 size-6 text-white"
+              className="shrink-0 mt-2 size-6 text-gray-800 dark:text-white"
               xmlns="http://www.w3.org/2000/svg"
               width={24}
               height={24}
@@ -24,46 +34,30 @@ const About = () => {
               strokeLinecap="round"
               strokeLinejoin="round"
             >
-              <rect width={10} height={14} x={3} y={8} rx={2} />
-              <path d="M5 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-2.4" />
-              <path d="M8 18h.01" />
+              <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" />
+              <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" />
+              <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2" />
+              <path d="M10 6h4" />
+              <path d="M10 10h4" />
+              <path d="M10 14h4" />
+              <path d="M10 18h4" />
             </svg>
+            <div className="grow">
+              <h3 className="text-base sm:text-lg font-semibold text-gray-800 dark:text-neutral-200">
+                High quality Co-Living spaces
+              </h3>
+              <p className="mt-1 text-gray-600 dark:text-neutral-400">
+                Our fully furnished spaces are designed and purpose-built with
+                Co-Living in mind, featuring high-end finishes and amenities
+                that go far beyond traditional apartment buildings.
+              </p>
+            </div>
           </div>
-          <div className="mt-5">
-            <h3 className="group-hover:text-gray-600 text-lg font-semibold text-gray-800 dark:text-white dark:group-hover:text-gray-400">
-              Responsive
-            </h3>
-            <p className="mt-1 text-gray-600 dark:text-neutral-400">
-              Responsive, and mobile-first project on the web
-            </p>
-            <span className="mt-2 inline-flex items-center gap-x-1.5 text-sm text-blue-600 decoration-2 group-hover:underline group-focus:underline font-medium">
-              Learn more
-              <svg
-                className="shrink-0 size-4"
-                xmlns="http://www.w3.org/2000/svg"
-                width={24}
-                height={24}
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="m9 18 6-6-6-6" />
-              </svg>
-            </span>
-          </div>
-        </a>
-        {/* End Icon Block */}
-        {/* Icon Block */}
-        <a
-          className="group flex flex-col justify-center hover:bg-gray-50 focus:outline-none focus:bg-gray-50 rounded-xl p-4 md:p-7 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
-          href="#"
-        >
-          <div className="flex justify-center items-center size-12 bg-blue-600 rounded-xl">
+          {/* End Icon Block */}
+          {/* Icon Block */}
+          <div className="flex gap-x-5 sm:gap-x-8">
             <svg
-              className="shrink-0 size-6 text-white"
+              className="shrink-0 mt-2 size-6 text-gray-800 dark:text-white"
               xmlns="http://www.w3.org/2000/svg"
               width={24}
               height={24}
@@ -74,47 +68,26 @@ const About = () => {
               strokeLinecap="round"
               strokeLinejoin="round"
             >
-              <path d="M20 7h-9" />
-              <path d="M14 17H5" />
-              <circle cx={17} cy={17} r={3} />
-              <circle cx={7} cy={7} r={3} />
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+              <circle cx={9} cy={7} r={4} />
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
             </svg>
+            <div className="grow">
+              <h3 className="text-base sm:text-lg font-semibold text-gray-800 dark:text-neutral-200">
+                Fostering vibrant communities
+              </h3>
+              <p className="mt-1 text-gray-600 dark:text-neutral-400">
+                Our passion is bringing people together. Beyond creating
+                beautiful spaces, we provide shared experiences.
+              </p>
+            </div>
           </div>
-          <div className="mt-5">
-            <h3 className="group-hover:text-gray-600 text-lg font-semibold text-gray-800 dark:text-white dark:group-hover:text-gray-400">
-              Customizable
-            </h3>
-            <p className="mt-1 text-gray-600 dark:text-neutral-400">
-              Components are easily customized and extendable
-            </p>
-            <span className="mt-2 inline-flex items-center gap-x-1.5 text-sm text-blue-600 decoration-2 group-hover:underline group-focus:underline font-medium">
-              Learn more
-              <svg
-                className="shrink-0 size-4"
-                xmlns="http://www.w3.org/2000/svg"
-                width={24}
-                height={24}
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="m9 18 6-6-6-6" />
-              </svg>
-            </span>
-          </div>
-        </a>
-        {/* End Icon Block */}
-        {/* Icon Block */}
-        <a
-          className="group flex flex-col justify-center hover:bg-gray-50 focus:outline-none focus:bg-gray-50 rounded-xl p-4 md:p-7 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
-          href="#"
-        >
-          <div className="flex justify-center items-center size-12 bg-blue-600 rounded-xl">
+          {/* End Icon Block */}
+          {/* Icon Block */}
+          <div className="flex gap-x-5 sm:gap-x-8">
             <svg
-              className="shrink-0 size-6 text-white"
+              className="shrink-0 mt-2 size-6 text-gray-800 dark:text-white"
               xmlns="http://www.w3.org/2000/svg"
               width={24}
               height={24}
@@ -125,89 +98,31 @@ const About = () => {
               strokeLinecap="round"
               strokeLinejoin="round"
             >
-              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+              <path d="M7 10v12" />
+              <path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a3.13 3.13 0 0 1 3 3.88Z" />
             </svg>
+            <div className="grow">
+              <h3 className="text-base sm:text-lg font-semibold text-gray-800 dark:text-neutral-200">
+                Simple and all-inclusive
+              </h3>
+              <p className="mt-1 text-gray-600 dark:text-neutral-400">
+                We worry about the details so that our residents don't have to.
+                From our online application process to simple, all-inclusive
+                billing we aim to make the living experience as effortless as
+                possible.
+              </p>
+            </div>
           </div>
-          <div className="mt-5">
-            <h3 className="group-hover:text-gray-600 text-lg font-semibold text-gray-800 dark:text-white dark:group-hover:text-gray-400">
-              Documentation
-            </h3>
-            <p className="mt-1 text-gray-600 dark:text-neutral-400">
-              Every component and plugin is well documented
-            </p>
-            <span className="mt-2 inline-flex items-center gap-x-1.5 text-sm text-blue-600 decoration-2 group-hover:underline group-focus:underline font-medium">
-              Learn more
-              <svg
-                className="shrink-0 size-4"
-                xmlns="http://www.w3.org/2000/svg"
-                width={24}
-                height={24}
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="m9 18 6-6-6-6" />
-              </svg>
-            </span>
-          </div>
-        </a>
-        {/* End Icon Block */}
-        {/* Icon Block */}
-        <a
-          className="group flex flex-col justify-center hover:bg-gray-50 focus:outline-none focus:bg-gray-50 rounded-xl p-4 md:p-7 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
-          href="#"
-        >
-          <div className="flex justify-center items-center size-12 bg-blue-600 rounded-xl">
-            <svg
-              className="shrink-0 size-6 text-white"
-              xmlns="http://www.w3.org/2000/svg"
-              width={24}
-              height={24}
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z" />
-              <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1" />
-            </svg>
-          </div>
-          <div className="mt-5">
-            <h3 className="group-hover:text-gray-600 text-lg font-semibold text-gray-800 dark:text-white dark:group-hover:text-gray-400">
-              24/7 Support
-            </h3>
-            <p className="mt-1 text-gray-600 dark:text-neutral-400">
-              Contact us 24 hours a day, 7 days a week
-            </p>
-            <span className="mt-2 inline-flex items-center gap-x-1.5 text-sm text-blue-600 decoration-2 group-hover:underline group-focus:underline font-medium">
-              Learn more
-              <svg
-                className="shrink-0 size-4"
-                xmlns="http://www.w3.org/2000/svg"
-                width={24}
-                height={24}
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="m9 18 6-6-6-6" />
-              </svg>
-            </span>
-          </div>
-        </a>
-        {/* End Icon Block */}
+          {/* End Icon Block */}
+        </div>
       </div>
+      {/* End Grid */}
     </div>
-    {/* End Icon Blocks */}
+  </div>
+  {/* End Icon Blocks */}
+</>
+
+
   </>
   
 

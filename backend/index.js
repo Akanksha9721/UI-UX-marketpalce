@@ -23,7 +23,7 @@ app.get('/',(req,res)=>{
     res.send('add response from index');
  })
  app.get('/getall',(req,res)=>{
-    res.send('response from getall')
+    res.send('response from getall');
  })
  //getall
  //delete

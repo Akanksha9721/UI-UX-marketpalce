@@ -12,6 +12,12 @@ router.post('/add', (req, res) => {
     })
     .catch((err) => {
       console.log(err);
+      if(err.code === 11000){
+        res.status(500).json({message:'Email Aleady Registered'});
+
+      }else{
+        res.status(500).json({message:'internal server Error'});
+      }
     })
 
 });
@@ -29,7 +35,7 @@ router.get('/getall',(req, res) => {
 
 });
 router.get('/getbycity/:city', (req, res) => {
-  Model.find()
+  Model.find({ city: req.params.city })
     .then((result) => {
       res.status(200).json(result);
 
@@ -41,7 +47,7 @@ router.get('/getbycity/:city', (req, res) => {
 })
 //getbyid
 router.get('/getbyid/:id', (req, res) => {
-  Model.findById()
+  Model.findById(req.params.id)
    .then((result) => {
     res.status(200).json(result);
     
@@ -53,7 +59,7 @@ router.get('/getbyid/:id', (req, res) => {
 
 //delete
 router.delete('/delete/:id', (req, res) => {
-  Model.findByIdAndDelete()
+  Model.findByIdAndDelete(req.params.id)
   .then((result) => {
     res.status(200).json(result);
     
@@ -65,7 +71,7 @@ router.delete('/delete/:id', (req, res) => {
 
 //update
 router.put('/update/:id', (req, res) => {
-  Model.findByIdAndUpdate()
+  Model.findByIdAndUpdate(req.params.id,req.body,{new:TextTrackCueList})
   .then((result) => {
     res.status(200).json(result);
     

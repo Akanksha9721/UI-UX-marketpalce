@@ -1,6 +1,6 @@
 const express = require('express');
 const Model = require('../models/designModel');
-
+require('dotenv').config();
 
 const router = express.Router();
 
@@ -12,11 +12,17 @@ router.post('/add', (req, res) => {
     })
     .catch((err) => {
       console.log(err);
+      if(err.code === 11000){
+        res.status(500).json({message:'Email Aleady Registered'});
+
+      }else{
+        res.status(500).json({message:'internal server Error'});
+      }
     })
 
 });
 //getall
-router.get('/getall',(req, res) => {
+router.get('/getall', (req, res) => {
   Model.find()
     .then((result) => {
       res.status(200).json(result);
@@ -29,7 +35,7 @@ router.get('/getall',(req, res) => {
 
 });
 router.get('/getbycity/:city', (req, res) => {
-  Model.find()
+  Model.find({ city: req.params.city })
     .then((result) => {
       res.status(200).json(result);
 
@@ -41,39 +47,39 @@ router.get('/getbycity/:city', (req, res) => {
 })
 //getbyid
 router.get('/getbyid/:id', (req, res) => {
-  Model.findById()
-   .then((result) => {
-    res.status(200).json(result);
-    
-   }).catch((err) => {
-    console.log(err);
-    res.status(500).json(err);
-   });
+  Model.findById(req.params.id)
+    .then((result) => {
+      res.status(200).json(result);
+
+    }).catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
 });
 
 //delete
 router.delete('/delete/:id', (req, res) => {
-  Model.findByIdAndDelete()
-  .then((result) => {
-    res.status(200).json(result);
-    
-   }).catch((err) => {
-    console.log(err);
-    res.status(500).json(err);
-   });
+  Model.findByIdAndDelete(req.params.id)
+    .then((result) => {
+      res.status(200).json(result);
+
+    }).catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
 });
 
 //update
 router.put('/update/:id', (req, res) => {
-  Model.findByIdAndUpdate()
-  .then((result) => {
-    res.status(200).json(result);
-    
-   }).catch((err) => {
-    console.log(err);
-    res.status(500).json(err);
-   });
- 
+  Model.findByIdAndUpdate(req.params.id)
+    .then((result) => {
+      res.status(200).json(result);
+
+    }).catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+
 });
 
 
