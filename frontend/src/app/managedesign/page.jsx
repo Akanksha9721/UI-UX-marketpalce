@@ -53,10 +53,12 @@ const Managedesign = () => {
                 <th className='p-3'>UPLOADBY</th>
                 <th className='p-3'>DESCRIPTION</th>
                 <th className='p-3'>CREATED At</th>
+                <th className='p-3'>DELETE</th>
+                <th className='p-3'>UPDATE</th>
+                <th className='p-3'>DOWNLOAD</th>
 
                 <th className='p-3' colspan={2}></th>
-                <th className='p-3' colspan={2}></th>
-
+               
               </tr>
             </thead>
             <tbody>
