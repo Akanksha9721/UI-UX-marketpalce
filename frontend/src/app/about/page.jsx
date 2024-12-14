@@ -5,6 +5,7 @@ const About = () => {
     <>
     <>
   {/* Icon Blocks */}
+  <div className=''>
   <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
     <div className="max-w-2xl mx-auto">
       {/* Grid */}
@@ -118,6 +119,7 @@ const About = () => {
       </div>
       {/* End Grid */}
     </div>
+  </div>
   </div>
   {/* End Icon Blocks */}
 </>

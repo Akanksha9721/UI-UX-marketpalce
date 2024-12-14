@@ -161,28 +161,8 @@ const page = () => {
         </div>
         {/* call to action - end */}
         {/* footer - start */}
-        <footer className="bg-white">
-          <div className="bg-indigo-500 py-6">
-            <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-              <div className="flex flex-col items-center justify-between gap-2 md:flex-row">
-                <div className="mb-3 text-center md:mb-0 md:text-left">
-                  <span className="font-bold uppercase tracking-widest text-gray-100">
-                    Newsletter
-                  </span>
-                  <p className="text-indigo-200">Subscribe to our newsletter</p>
-                </div>
-                <form className="flex w-full gap-2 md:max-w-md">
-                  <input
-                    placeholder="Email"
-                    className="w-full flex-1 rounded border border-white bg-indigo-400 px-3 py-2 text-white placeholder-indigo-100 outline-none ring-indigo-300 transition duration-100 focus:ring"
-                  />
-                  <button className="inline-block rounded bg-white px-8 py-2 text-center text-sm font-semibold text-indigo-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:text-indigo-600 md:text-base">
-                    Send
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
+        <footer className="bg-black">
+          
           <div className="pt-12 lg:pt-16">
             <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
               <div className="mb-16 grid grid-cols-2 gap-12 md:grid-cols-4 lg:grid-cols-6 lg:gap-8">
@@ -289,36 +269,29 @@ const page = () => {
                   <nav className="flex flex-col gap-4">
                     <div>
                       <a
-                        href="#"
+                        href="/add-design"
                         className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
                       >
-                        Overview
+                         Add Designs
                       </a>
                     </div>
                     <div>
                       <a
-                        href="#"
+                        href="/managedesign"
                         className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
                       >
-                        Solutions
+                        Manage Design
                       </a>
                     </div>
                     <div>
                       <a
-                        href="#"
+                        href="/browse-designs"
                         className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
                       >
-                        Pricing
+                        Browse Design
                       </a>
                     </div>
-                    <div>
-                      <a
-                        href="#"
-                        className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-                      >
-                        Customers
-                      </a>
-                    </div>
+                   
                   </nav>
                 </div>
                 {/* nav - end */}
@@ -330,7 +303,7 @@ const page = () => {
                   <nav className="flex flex-col gap-4">
                     <div>
                       <a
-                        href="#"
+                        href="/about"
                         className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
                       >
                         About
@@ -352,22 +325,8 @@ const page = () => {
                         Jobs
                       </a>
                     </div>
-                    <div>
-                      <a
-                        href="#"
-                        className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-                      >
-                        Press
-                      </a>
-                    </div>
-                    <div>
-                      <a
-                        href="#"
-                        className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-                      >
-                        Blog
-                      </a>
-                    </div>
+                    
+                   
                   </nav>
                 </div>
                 {/* nav - end */}
@@ -379,7 +338,7 @@ const page = () => {
                   <nav className="flex flex-col gap-4">
                     <div>
                       <a
-                        href="#"
+                        href="/contact"
                         className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
                       >
                         Contact
@@ -387,28 +346,21 @@ const page = () => {
                     </div>
                     <div>
                       <a
-                        href="#"
+                        href="/signup"
                         className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
                       >
-                        Documentation
+                        Signup
                       </a>
                     </div>
                     <div>
                       <a
-                        href="#"
+                        href="/login"
                         className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
                       >
-                        Chat
+                        Login
                       </a>
                     </div>
-                    <div>
-                      <a
-                        href="#"
-                        className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
-                      >
-                        FAQ
-                      </a>
-                    </div>
+                   
                   </nav>
                 </div>
                 {/* nav - end */}

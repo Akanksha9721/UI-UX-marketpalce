@@ -30,6 +30,25 @@ const Adddesign = () => {
 
     });
 
+    const uploadFile = (e) => {
+        const file = e.target.files[0];
+        const fd = new FormData();
+        fd.append("myfile", file);
+        fetch("http://localhost:5000/util/uploadfile", {
+            method: "POST",
+            body: fd,
+        }).then((res) => {
+            if (res.status === 200) {
+                console.log("file uploaded");
+                res.json().then(result => {
+                    console.log(result);
+
+                    adddesignForm.setFieldValue('file', result.url);
+                })
+            }
+        });
+    };
+
     const uploadImage = (e) => {
         const file = e.target.files[0];
 
@@ -70,124 +89,106 @@ const Adddesign = () => {
 
                             </h2>
                             <form onSubmit={adddesignForm.handleSubmit} >
-                                <div className="grid gap-4 lg:gap-6">
-                                    {/* Grid */}
-                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
-                                        <div>
-                                            <label
-                                                htmlFor="hs-firstname-contacts-1"
-                                                className="block mb-2 text-sm text-gray-700 font-medium dark:text-white"
-                                            >
-                                                Name
-                                            </label>
-                                            <div className="relative">
-                                                <input
-                                                    type="text"
-                                                    id="name"
-                                                    onChange={adddesignForm.handleChange}
-                                                    value={adddesignForm.values.name}
-                                                    className="border py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-                                                />
-                                            </div>
-                                            {
-                                                (adddesignForm.errors.name && adddesignForm.touched.name) && (
-                                                    <p className=" text-xs text-red-600 mt-2" id="email-error">
-                                                        {adddesignForm.errors.name}
-                                                    </p>
-                                                )
-                                            }
-                                            <div>
-                                                
-
-                                            </div>
-                                            
-                                                <label
-                                                    htmlFor="hs-lastname-contacts-1"
-                                                    className="block mb-2 text-sm text-gray-700 font-medium dark:text-white"
-                                                >
-                                                    file
-                                                </label>
-
+                                <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 lg:gap-6">
+                                    <div>
+                                        <label
+                                            htmlFor="hs-firstname-contacts-1"
+                                            className="block mb-2 text-sm text-gray-700 font-medium dark:text-white"
+                                        >
+                                            Name
+                                        </label>
+                                        <div className="relative">
                                             <input
                                                 type="text"
-                                                id="file"
+                                                id="name"
                                                 onChange={adddesignForm.handleChange}
-                                                value={adddesignForm.values.file}
-                                                className=" border py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-                                            />
-                                            <label
-                                                htmlFor="image"
-                                                className="block mb-2 text-sm text-gray-700 font-medium dark:text-white"
-                                            >
-                                                Upload Image
-                                            </label>
-                                            <input
-                                                type="file"
-                                                id="image"
-                                                onChange={uploadImage}
-                                                className=" border py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-                                            />
-                                        </div>
-                                    </div>
-                                    {/* End Grid */}
-                                    {/* Grid */}
-                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
-                                        <div>
-                                            <label
-                                                htmlFor="hs-email-contacts-1"
-                                                className="block mb-2 text-sm text-gray-700 font-medium dark:text-white"
-                                            >
-                                                price
-                                            </label>
-                                            <input
-                                                type="number"
-                                                id="price"
-                                                onChange={adddesignForm.handleChange}
-                                                value={adddesignForm.values.price}
-
+                                                value={adddesignForm.values.name}
                                                 className="border py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
                                             />
                                         </div>
-                                        <div>
-                                            <label
-                                                htmlFor="hs-phone-number-1"
-                                                className="block mb-2 text-sm text-gray-700 font-medium dark:text-white"
-                                            >
-                                                UploadBy
-                                            </label>
-                                            <input
-                                                type="text"
-                                                id="uploadBy"
-                                                onChange={adddesignForm.handleChange}
-                                                value={adddesignForm.values.uploadBy}
-                                                className=" border py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-                                            />
-                                        </div>
-                                        <div>
-                                            <label
-                                                htmlFor="hs-phone-number-1"
-                                                className="block mb-2 text-sm text-gray-700 font-medium dark:text-white"
-                                            >
-                                                description
-                                            </label>
-                                            <input
-                                                type="text"
-                                                id="description"
-                                                onChange={adddesignForm.handleChange}
-                                                value={adddesignForm.values.description}
-                                                className=" border py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-                                            />
-                                        </div>
+                                        {
+                                            (adddesignForm.errors.name && adddesignForm.touched.name) && (
+                                                <p className=" text-xs text-red-600 mt-2" id="email-error">
+                                                    {adddesignForm.errors.name}
+                                                </p>
+                                            )
+                                        }
+
+
                                     </div>
-                                    {/* End Grid */}
                                     <div>
                                         <label
-                                            htmlFor="hs-about-contacts-1"
+                                            htmlFor="hs-lastname-contacts-1"
                                             className="block mb-2 text-sm text-gray-700 font-medium dark:text-white"
                                         >
-
+                                            file
                                         </label>
 
+                                        <input
+                                            type="file"
+                                            onChange={uploadFile}
+                                            className=" border py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                                        />
+                                    </div>
+                                    <div>
+                                        <label
+                                            htmlFor="image"
+                                            className="block mb-2 text-sm text-gray-700 font-medium dark:text-white"
+                                        >
+                                            Upload Image
+                                        </label>
+                                        <input
+                                            type="file"
+                                            id="image"
+                                            onChange={uploadImage}
+                                            className=" border py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                                        />
+                                    </div>
+
+                                    <div>
+                                        <label
+                                            htmlFor="hs-email-contacts-1"
+                                            className="block mb-2 text-sm text-gray-700 font-medium dark:text-white"
+                                        >
+                                            price
+                                        </label>
+                                        <input
+                                            type="number"
+                                            id="price"
+                                            onChange={adddesignForm.handleChange}
+                                            value={adddesignForm.values.price}
+
+                                            className="border py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                                        />
+                                    </div>
+                                    <div>
+                                        <label
+                                            htmlFor="hs-phone-number-1"
+                                            className="block mb-2 text-sm text-gray-700 font-medium dark:text-white"
+                                        >
+                                            UploadBy
+                                        </label>
+                                        <input
+                                            type="text"
+                                            id="uploadBy"
+                                            onChange={adddesignForm.handleChange}
+                                            value={adddesignForm.values.uploadBy}
+                                            className=" border py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                                        />
+                                    </div>
+                                    <div>
+                                        <label
+                                            htmlFor="hs-phone-number-1"
+                                            className="block mb-2 text-sm text-gray-700 font-medium dark:text-white"
+                                        >
+                                            description
+                                        </label>
+                                        <textarea
+                                            id="description"
+                                            onChange={adddesignForm.handleChange}
+                                            value={adddesignForm.values.description}
+                                            className=" border py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                                        ></textarea>
                                     </div>
                                 </div>
                                 {/* End Grid */}
@@ -205,13 +206,13 @@ const Adddesign = () => {
                                     </p>
                                 </div>
                             </form>
-                        </div>
+                        </div >
                         {/* End Card */}
-                    </div>
+                    </div >
 
-                </div>
+                </div >
 
-            </div>
+            </div >
             {/* End Contact Us */}
         </>
 

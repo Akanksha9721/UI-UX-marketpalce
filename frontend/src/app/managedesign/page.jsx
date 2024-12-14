@@ -36,7 +36,7 @@ const Managedesign = () => {
       })
 
   }
- 
+
 
   return (
     <>
@@ -58,7 +58,7 @@ const Managedesign = () => {
                 <th className='p-3'>DOWNLOAD</th>
 
                 <th className='p-3' colspan={2}></th>
-               
+
               </tr>
             </thead>
             <tbody>
@@ -72,7 +72,7 @@ const Managedesign = () => {
                       </td>
                       <td className='p-3'>{design._id}</td>
                       <td className='p-3'>{design.name}</td>
-                      
+
                       <td className='p-3'>₹{design.price}</td>
                       <td className='p-3'>{design.uploadBy}</td>
                       <td className='p-3'>{design.description}</td>
@@ -84,7 +84,7 @@ const Managedesign = () => {
                         <Link href={'/updatedesign/' + design._id} className='bg-blue-500 py-1 px-3 text-white rounded-full'>Update</Link>
                       </td>
                       <td className='p-3'>
-                      <button onClick={() => { downloadDesign(design._id) }} className='bg-red-500 py-1 px-3 text-white rounded-full'>Download</button>
+                        <a download href={design.file} target='_blank' className='bg-red-500 py-1 px-3 text-white rounded-full'>Download</a>
                       </td>
 
 
