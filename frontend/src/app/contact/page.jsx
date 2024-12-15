@@ -18,11 +18,10 @@ const contact = () => {
 
   }
   );
- 
-
   return (
     <>
-      <div className='bg-gray-50 dark:bg-gray-900 '>
+
+      <div className='mix-auto' style={{ backgroundImage: `url('https://img.freepik.com/premium-vector/techonology-futuristic-background_23-2148481499.jpg?semt=ais_hybrid')` }}>
         <div className='max-w-lg mx-auto color:black' >
           {/* Contact Us */}
           <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto ">
@@ -155,6 +154,7 @@ const contact = () => {
           {/* End Contact Us */}
         </div>
       </div>
+
     </>
 
 

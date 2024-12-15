@@ -21,7 +21,7 @@ const BrowseDesign = () => {
     }, [])
 
     return (
-        <div>
+        <div style={{backgroundImage:`url('https://designthinkingblogs.com/wp-content/uploads/2023/04/Black-background-01-1024x894.webp')`}}>
             <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
                 {/* Title */}
                 <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">

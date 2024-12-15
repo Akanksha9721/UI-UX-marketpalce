@@ -70,7 +70,7 @@ const Adddesign = () => {
 
     return (
         <>
-            <div className='bg-gray-50 dark:bg-gray-900'>
+            <div  className=' 'style={{backgroundImage:`url('https://oneandonlydesign.in/wp-content/uploads/2023/10/Dark-Mode-and-UIUX-A-User-Centric-Perspective-jpg.webp')`}}>
                 <div className="max-w-[85rem]  px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
                     <div className="max-w-xl mx-auto">
                         <div className="text-center">
