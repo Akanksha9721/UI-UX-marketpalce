@@ -11,7 +11,7 @@ const Navbar = () => {
                         href="/"
                         aria-label="Brand"
                     >
-                        Flowrift
+                        UXpreline
                     </Link>
                     {/* Collapse Button */}
                     <button
@@ -69,7 +69,7 @@ const Navbar = () => {
                             <div className="grow">
                                 <div className="flex flex-col md:flex-row md:justify-end md:items-center gap-0.5 md:gap-1">
                                     <Link
-                                        className="p-2 flex items-center text-sm bg-gray-100 text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:bg-neutral-700 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                                        className="p-2 flex items-center text-sm bg-gray-100 text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:bg-neutral-700 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 "
                                         href="/"
                                         aria-current="page"
                                     >
@@ -90,7 +90,7 @@ const Navbar = () => {
                                         </svg>
                                         Home
                                     </Link>
-                                    
+
                                     <Link
                                         className="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
                                         href="/about"
@@ -198,7 +198,7 @@ const Navbar = () => {
                                     className="py-[7px] px-2.5 inline-flex items-center font-medium text-sm rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 focus:outline-none focus:bg-gray-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
                                     href="/managedesign"
                                 >
-                                    Manage 
+                                    Manage
                                 </Link>
                                 <Link
                                     className="py-2 px-2.5 inline-flex items-center font-medium text-sm rounded-lg bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:bg-blue-600"

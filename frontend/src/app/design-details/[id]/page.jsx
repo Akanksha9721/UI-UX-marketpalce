@@ -35,12 +35,10 @@ const DesignDetails = () => {
       })
   }
 
-
   const getDesignData = async () => {
     const res = await Axios.get('https://localhost:5000/design/getbyid/' + id);
     console.log(res.data);
     setDesignData(res.data);
-
   }
 
   if (designData === null) {
@@ -61,7 +59,7 @@ const DesignDetails = () => {
             />
             {/* End Col */}
             <div className="mt-5 sm:mt-10 lg:mt-0">
-              <div className="space-y-6 sm:space-y-8">
+              <div className="space-y-6 sm:space-y-8  border border-gray-200 text-center">
                 {/* Title */}
                 <div className="space-y-2 md:space-y-4">
                   <h2 className="font-bold text-3xl lg:text-4xl text-gray-800 dark:text-neutral-200">
@@ -75,8 +73,8 @@ const DesignDetails = () => {
                 {/* End Title */}
                 <p>{designData.name}</p>
                 <p className='font-bold'>₹ {designData.price}</p>
-                <p className='mt-5'>{designData.uploadBy}</p>
-                <a className='bg-green-500 py-1 px-3 text-black rounded-full' download href={designData.file} target='_blank'>Download Figma File</a>
+                <p className='mt-5  '>{designData.uploadBy}</p>
+                <a className='bg-green-500 py-1 px-3 text-black rounded-full  ' download href={designData.file} target='_blank'>Download Figma File</a>
                 <p>{designData.description}</p>
               </div>
             </div>

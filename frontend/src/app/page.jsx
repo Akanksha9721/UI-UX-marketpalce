@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 
 const page = () => {
@@ -147,12 +148,12 @@ const page = () => {
                   text.
                 </p>
                 <div className="mt-auto">
-                  <a
-                    href="#"
+                  <Link
+                    href="/contact"
                     className="inline-block rounded-lg bg-white px-8 py-3 text-center text-sm font-semibold text-gray-800 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:text-base"
                   >
                     Contact support
-                  </a>
+                  </Link>
                 </div>
               </div>
               {/* content - end */}
@@ -174,23 +175,13 @@ const page = () => {
                       className="inline-flex items-center gap-2 text-xl font-bold text-black md:text-2xl"
                       aria-label="logo"
                     >
-                      <svg
-                        width={95}
-                        height={94}
-                        viewBox="0 0 95 94"
-                        className="h-auto w-5 text-indigo-500"
-                        fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M96 0V47L48 94H0V47L48 0H96Z" />
-                      </svg>
-                      Flowrift
+
+                      Designs
                     </a>
                   </div>
                   {/* logo - end */}
                   <p className="mb-6 text-gray-500 sm:pr-8">
-                    Filler text is dummy text which has no meaning however looks very
-                    similar to real text
+                   UI/UX market place 
                   </p>
                   {/* social - start */}
                   <div className="flex gap-4">

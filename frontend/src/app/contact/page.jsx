@@ -21,11 +21,11 @@ const contact = () => {
   return (
     <>
 
-      <div className='mix-auto' style={{ backgroundImage: `url('https://img.freepik.com/premium-vector/techonology-futuristic-background_23-2148481499.jpg?semt=ais_hybrid')` }}>
-        <div className='max-w-lg mx-auto color:black' >
+      <div className='  mix-auto bg-no-repeat bg-cover bg-center' style={{ backgroundImage: `url(' https://img.freepik.com/free-vector/gradient-pink-green-background_23-2150284429.jpg?t=st=1737882386~exp=1737885986~hmac=90cbe969ca23279b2009de9d03e8142517a32b686c8dbc33130ec0c91edc7e92&w=996')` }} >
+        <div className='max-w-lg mx-auto color:black'>
           {/* Contact Us */}
           <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto ">
-            <div className="max-w-xl mx-auto  ">
+            <div className="max-w-xl mx-auto">
               <div className="text-center">
                 <h1 className="text-3xl font-bold text-gray-800 sm:text-4xl dark:text-white">
                   Contact Us
@@ -35,7 +35,7 @@ const contact = () => {
                 </p>
               </div>
             </div>
-            <div className="mt-12 max-w-lg mx-auto shadow-xl bg-white rounded-xl ">
+            <div className="mt-12 max-w-lg mx-auto shadow-xl bg-white rounded-xl  bg-opacity-50 ">
               {/* Card */}
               <div className="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-8 dark:border-neutral-700 ">
                 <h2 className="mb-8 text-xl font-semibold text-gray-800 dark:text-neutral-200">

@@ -40,12 +40,12 @@ const Managedesign = () => {
 
   return (
     <>
-      <div className=''>
-        <div className='container mx-auto py-10'>
+      <div className=' h-screen  bg-gray-100'>
+        <div className='container mx-auto py-10 overflow-x-auto'>
           <h1 className='text-center text-2xl font-bold'>Manage Design</h1>
-          <table className='w-full'>
+          <table className='w-full  min-w-max'>
             <thead>
-              <tr className='bg-gray-600 text-white font-bold'>
+              <tr className='bg-gray-600 text-white font-bold text-center'>
                 <th className='p-3'>IMAGE</th>
                 <th className='p-3'>ID</th>
                 <th className='p-3'>Name</th>
@@ -56,8 +56,7 @@ const Managedesign = () => {
                 <th className='p-3'>DELETE</th>
                 <th className='p-3'>UPDATE</th>
                 <th className='p-3'>DOWNLOAD</th>
-
-                <th className='p-3' colspan={2}></th>
+               
 
               </tr>
             </thead>
@@ -65,14 +64,13 @@ const Managedesign = () => {
               {
                 designList.map((design) => {
                   return (
-                    <tr className='border bg-gray-200'>
+                    <tr className='border bg-white-200'>
 
                       <td className='p-3'>
                         <img src={design.image} className='h-12' alt="" />
                       </td>
                       <td className='p-3'>{design._id}</td>
                       <td className='p-3'>{design.name}</td>
-
                       <td className='p-3'>₹{design.price}</td>
                       <td className='p-3'>{design.uploadBy}</td>
                       <td className='p-3'>{design.description}</td>

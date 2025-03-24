@@ -14,7 +14,6 @@ const Adddesign = () => {
             uploadBy: '',
             price: '',
             discription: ''
-
         },
         onSubmit: (values) => {
             console.log(values);
@@ -70,11 +69,11 @@ const Adddesign = () => {
 
     return (
         <>
-            <div  className=' 'style={{backgroundImage:`url('https://oneandonlydesign.in/wp-content/uploads/2023/10/Dark-Mode-and-UIUX-A-User-Centric-Perspective-jpg.webp')`}}>
+            <div  className=' h-screen  mx-auto bg-no-repeat bg-cover bg-center ' style={{backgroundImage:`url('https://img.freepik.com/free-vector/gradient-wavy-background_23-2149123238.jpg?t=st=1737883020~exp=1737886620~hmac=d3ffdd66be95184ea73846180dfb6cb1f4fb60e6cec4b06046490f52ec58d9df&w=996')`}}>
                 <div className="max-w-[85rem]  px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
                     <div className="max-w-xl mx-auto">
                         <div className="text-center">
-                            <h1 className="text-3xl font-bold text-gray-800 sm:text-4xl dark:text-white">
+                            <h1 className="text-3xl font-bold text-gray-800 sm:text-4xl dark:text-white ">
                                 Add Design
                             </h1>
                             <p className="mt-1 text-gray-600 dark:text-neutral-400">
@@ -82,7 +81,7 @@ const Adddesign = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="mt-12 max-w-lg mx-auto shadow-xl bg-white rounded-xl">
+                    <div className="mt-12 max-w-lg mx-auto shadow-xl bg-white rounded-xl bg-black bg-opacity-50">
                         {/* Card */}
                         <div className="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-8 dark:border-neutral-700">
                             <h2 className="mb-8 text-xl font-semibold text-gray-800 dark:text-neutral-200">
@@ -127,7 +126,7 @@ const Adddesign = () => {
                                         <input
                                             type="file"
                                             onChange={uploadFile}
-                                            className=" border py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                                            className=" border border py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
                                         />
                                     </div>
                                     <div>
@@ -141,7 +140,7 @@ const Adddesign = () => {
                                             type="file"
                                             id="image"
                                             onChange={uploadImage}
-                                            className=" border py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                                            className=" border border py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
                                         />
                                     </div>
 
@@ -158,7 +157,7 @@ const Adddesign = () => {
                                             onChange={adddesignForm.handleChange}
                                             value={adddesignForm.values.price}
 
-                                            className="border py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                                            className=" border border py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
                                         />
                                     </div>
                                     <div>
@@ -173,7 +172,7 @@ const Adddesign = () => {
                                             id="uploadBy"
                                             onChange={adddesignForm.handleChange}
                                             value={adddesignForm.values.uploadBy}
-                                            className=" border py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                                            className="  border border py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
                                         />
                                     </div>
                                     <div>

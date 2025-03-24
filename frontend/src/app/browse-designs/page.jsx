@@ -21,7 +21,7 @@ const BrowseDesign = () => {
     }, [])
 
     return (
-        <div style={{backgroundImage:`url('https://designthinkingblogs.com/wp-content/uploads/2023/04/Black-background-01-1024x894.webp')`}}>
+        <div  className='  mx-auto bg-no-repeat bg-cover bg-center'  style={{backgroundImage:`url('https://img.freepik.com/free-vector/minimal-white-gray-background-with-wavy-lines_1017-25099.jpg?semt=ais_hybrid ')`}}>
             <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
                 {/* Title */}
                 <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
@@ -46,7 +46,7 @@ const BrowseDesign = () => {
                                     <img
                                         className="w-full object-cover rounded-xl"
                                         src={design.image}
-                                        alt="Blog Image"
+                                        alt="https://img.freepik.com/free-vector/gradient-liquid-background-design_52683-70580.jpgBlog Image"
                                     />
                                 </div>
                                 <div className="my-6">
