@@ -7,7 +7,7 @@ const page = () => {
       <>
         {/* hero - start */}
         <div className="bg-white pb-6 sm:pb-8 lg:pb-12">
-          <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
+          <div className="mx-auto w-screen-2xl px-4 md:px-8 py-5">
 
             <section className="min-h-96 relative flex flex-1 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-gray-100 py-16 shadow-lg md:py-20 xl:py-48">
               {/* image - start */}
@@ -15,7 +15,7 @@ const page = () => {
                 src="https://new.mobitouch.pl/wp-content/uploads/2023/09/UI-Designera_-Blog-Main.jpg"
                 loading="lazy"
                 alt="Photo by Fakurian Design"
-                className="absolute inset-0 h-full w-full object-cover object-center"
+                className="absolute inset-0 h-full w-full object-cover object-center "
               />
               {/* image - end */}
               {/* overlay - start */}

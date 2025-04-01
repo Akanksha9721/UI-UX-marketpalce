@@ -35,12 +35,13 @@ const Signup = () => {
       console.log(values);
       axios.post('http://localhost:5000/user/add', values)
         .then((result) => {
-          toast.success('User added successfully');
-          router.push('/login');
+          console.log(res.data);
+          console.log(res.status);
         }).catch((err) => {
           console.log(err);
-          toast.error(err?.response?.data?.message || 'Some error occured');
-
+          toast.success('User added successfully');
+          router.push('/login');
+          
         });
     },
     validationSchema: SignupSchema
