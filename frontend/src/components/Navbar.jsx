@@ -124,7 +124,7 @@ const Navbar = () => {
                                         about
                                     </Link>
                                     <Link
-                                        className="p-2 flex items-center text-lg font-medium uppaercase text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                                        className="p-2 flex items-center text-lg font-medium uppercase text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
                                         href="/contact"
                                     >
                                         <svg
@@ -144,10 +144,10 @@ const Navbar = () => {
                                             <path d="M22 13a18.15 18.15 0 0 1-20 0" />
                                             <rect width={20} height={14} x={2} y={6} rx={2} />
                                         </svg>
-                                        contact
+                                        CONTACT
                                     </Link>
                                     <Link
-                                        className="p-2 flex items-center text-lg font-medium uppaercase text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                                        className="p-2 flex items-center text-lg font-medium uppercase text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
                                         href="/add-design"
                                     >
                                         <svg
@@ -170,7 +170,7 @@ const Navbar = () => {
                                         Add Design
                                     </Link>
                                     <Link
-                                        className="p-2 flex items-center text-lg font-medium  uppaercase  text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                                        className="p-2 flex items-center text-lg font-medium  uppercase  text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
                                         href="/browse-designs"
                                     >
                                         <svg
