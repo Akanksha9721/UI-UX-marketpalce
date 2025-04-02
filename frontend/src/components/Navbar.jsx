@@ -1,10 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-function toggleDarkMode() {
-    document.body.classList.toggle('bg-gray-900');
-    document.body.classList.toggle('text-white');
-}
+
 
 const Navbar = () => {
     return (
