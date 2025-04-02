@@ -6,10 +6,10 @@ const page = () => {
     <>
       <>
         {/* hero - start */}
-        <div className="bg-white pb-6 sm:pb-8 lg:pb-12">
-          <div className="mx-auto w-screen-2xl px-4 md:px-8 py-5">
+        <div className="bg-white  pb-6 sm:pb-8 lg:pb-12">
+          <div className="mx-auto w-screen-2xl ">
 
-            <section className="min-h-96 relative flex flex-1 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-gray-100 py-16 shadow-lg md:py-20 xl:py-48">
+            <section className="h-screen relative flex flex-1 shrink-0 items-center justify-center overflow-hidden  bg-gray-100 py-16 shadow-lg md:py-20 xl:py-48">
               {/* image - start */}
               <img
                 src="https://new.mobitouch.pl/wp-content/uploads/2023/09/UI-Designera_-Blog-Main.jpg"
@@ -39,11 +39,52 @@ const page = () => {
         </div>
         {/* hero - end */}
         {/* gallery - start */}
+{/* about */}
+        <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+          <div className="max-w-screen-xl mx-auto" >
+            <div className='   '>
+              <h2 className="  mt-2 text-3xl text-gray-800 font-bold lg:text-4xl dark:text-white text-center">
+                About Us
+              </h2>
+            </div>
+            {/* Grid */}
+            <div className="grid grid-cols-12 gap-12 mt-8">
+              <img className='col-span-4    w-screen  h-full rounded  ' src=" https://www.chitkara.edu.in/blogs/wp-content/uploads/2022/06/ux-vs-ui.jpg" alt="" />
+
+              <div className='col-span-8 space-y-6'>
+                <p className=" mt-8 text-gray-800 dark:text-neutral-400 font-medium test-justify text-lg  ">
+                  Marketplace UI/UX focuses on creating an intuitive, visually appealing, and user-friendly environment
+                  that facilitates effective communication, seamless transactions, and overall satisfaction for buyers and sellers.
+                  A well-designed UI/UX can significantly impact the success and growth of a marketplace by enhancing user satisfaction,
+                  increasing engagement, and fostering user trust.
+                  Marketplace UI/UX focuses on creating an intuitive, visually appealing, and user-friendly environment
+                  that facilitates effective communication, seamless transactions, and overall satisfaction for buyers and sellers.
+                </p>
+                <p className='mt-6 space-y-6 text-gray-800 dark:text-neutral-400 font-medium  text-justifty text-lg'>
+                  A well-designed UI/UX can significantly impact the success and growth of a marketplace by enhancing user satisfaction,
+                  increasing engagement, and fostering user trust.
+                  Marketplace UI/UX focuses on creating an intuitive, visually appealing, and user-friendly environment
+                  that facilitates effective communication, seamless transactions, and overall satisfaction for buyers and sellers.
+                  A well-designed UI/UX can significantly impact the success and growth of a marketplace by enhancing user satisfaction, increasing engagement, and fostering user trust.
+                  Marketplace UI/UX focuses on creating an intuitive, visually appealing, and user-friendly environment
+                  that facilitates effective communication, seamless transactions, and overall satisfaction for buyers and sellers.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        {/* about-end}
+ {/* gallery - start */}
+
+
         <div className="bg-white py-6 sm:py-8 lg:py-12">
           <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
+          <a href="/browse-designs">
             <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12">
-              GALLERY
+              DESIGNS
             </h2>
+            </a>
             <div className="mb-4 grid grid-cols-2 gap-4 sm:grid-cols-3 md:mb-8 md:grid-cols-4 md:gap-6 xl:gap-8">
               {/* image - start */}
               <a
@@ -58,7 +99,7 @@ const page = () => {
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50" />
                 <span className="relative mb-3 ml-4 inline-block text-sm text-white md:ml-5 md:text-lg">
-                
+
                 </span>
               </a>
               {/* image - end */}
@@ -75,7 +116,7 @@ const page = () => {
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50" />
                 <span className="relative mb-3 ml-4 inline-block text-sm text-white md:ml-5 md:text-lg">
-                  
+
                 </span>
               </a>
               {/* image - end */}
@@ -92,7 +133,7 @@ const page = () => {
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50" />
                 <span className="relative mb-3 ml-4 inline-block text-sm text-white md:ml-5 md:text-lg">
-                  
+
                 </span>
               </a>
               {/* image - end */}
@@ -109,19 +150,17 @@ const page = () => {
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50" />
                 <span className="relative mb-3 ml-4 inline-block text-sm text-white md:ml-5 md:text-lg">
-                  
+
                 </span>
               </a>
               {/* image - end */}
             </div>
             <div className="flex items-start justify-between gap-8 sm:items-center">
-
-
             </div>
           </div>
         </div>
 
-        
+
         {/* team - end */}
         {/* call to action - start */}
         <div className="bg-white py-6 sm:py-8 lg:py-12">
@@ -163,7 +202,6 @@ const page = () => {
         {/* call to action - end */}
         {/* footer - start */}
         <footer className="bg-black">
-          
           <div className="pt-12 lg:pt-16">
             <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
               <div className="mb-16 grid grid-cols-2 gap-12 md:grid-cols-4 lg:grid-cols-6 lg:gap-8">
@@ -175,16 +213,71 @@ const page = () => {
                       className="inline-flex items-center gap-2 text-xl font-bold text-black md:text-2xl"
                       aria-label="logo"
                     >
-
                       Designs
                     </a>
                   </div>
                   {/* logo - end */}
-                  <p className="mb-6 text-gray-500 sm:pr-8">
-                   UI/UX market place 
-                  </p>
+                  <div className="flex items-center gap-x-4 w-full md:w-auto">
+                    <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA7VBMVEX29vZGRlBGRk42wtn29vhGRlH29vRGRlP////29vlERE79/P/y8/VXVlz2+Pc7PEH09/GNjZQ+Pkg2NkKysbNGR0w3wdozxNZBQkdGRVTo6eozMj3v7vJPTlVPUFQ7O0P88/Pw+vPa2t3Lys0oJjK7ur8zMzwtLDVsa3A4OT1kY2nz9/vo/ff79/DQ0NLFxMff+//P7fHG4eYjIC+ko6d/foR2wMkzt8IquMgytMprv9IoKStmxMn0+e0tKjlMs7xJucJ0zdCPkJQ0wOIxuNHX+PYyxtGEz9qQ0dg9vePk8/ubz9h4eHpfXmeXlpqum54fAAAJfUlEQVR4nO2be1fbOBOHbSPZ8gXhGpybc3USOxBIQksK7bawWwpt9237/T/OK9kJ8UWC7G5wyznz7B+crmVFP480MxrLigIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPCiQDvqpq8gEyn6bnr7N5im9AIbl2RgKGGLvqd0avbN6ZRWr1BPSP8+1mibPqRQzuD0dKBv8Th2ja7zX0dshK5kjOnwbYoUKrzG79cfn32uq/QV3eyfuW65j+fGJuFsPmsTWzoTdYUSOxwOk0bl29uz+TC0bfsx4+iD08X569fni1Ozv5NRbw9pvQpGcRC8sS7M8vBTkB0u41EQxG9+HFGSvaJTMt4fxVEQx8uQSG7nj2j6+u0l4+rd+9fTnbmup0GmSS7+8DDGKjasw2jIx1gwJPsnspcj1sgwMLYCLbQfWui6GXYCS1NVrFrWm6VjCoZO9bMztPhwVa/XOHtXH+76Hz/2KxJpku+Rrz4wuiCKk1No8nXm7Ht43cTA8fzBG+rK7Nra3N7rtEUSTR3d3dT3Ntyc0wGS+e0dQ5bHmrEZohqPC4uRRwly4m1aMHPH4dpXoNYbA28uaY2uSGJ/uvjzvrYRWKvdLKaDamxI57GGm5kxqlEbFWcpuYhwRqGq+v7q+Tt2R81d0hrMisUf0T9O397v5ai/nZ4NKlFI/IaaHaOKrSVR3Fwb6kRZK7PWWu8odUn2+Dp7KZHoCxTeXe7VsrO0Xr88d91iu2cROLtm49IyYzSMyCzYkBwFORkMq5N4TZ38aOYVcomN0s9M/6rV6vWcEWsfTvvPrw+Z9iuvMHZVi4a5BcKiwcTKWpk/DyNo8fWpt0cG1nJ3MywfFdbi6Z9MYC03S2/fnZ4hSp85ajCFE8tSC/SYO80YUaeoi7OG4pEBB3PukOgwxmWFmu+ztZgd+t2727LCc70KhWS/qE9VvU+FiO4cFBWqxuER4T52HIkUco+aHTk9f3e7l1NYq99+Pq8gd2M23C+ZUO19ItnfFinETGFiw3kkmKUaW4tdx8x0IlBYe5cqfF6Z/13hTDhL1URipo+7q8IsZY716s5l+65fotB7RWhuHYpnaZoYFD3NQ6NGw2GrLB2/zjzNfT0X8e/3rk7PfqFC9wmFiQ11HSn2pFkMJGssn0lMfao++LJX38vbsP5l0H9WcTtSiIYjiUAe+p1V6kkHi8vb26wrvf12dY5+maf5RwrtiYdLPawldturzZg5+MpcTTaluf1SSeb9nxWyMToHTZlC1es6ySxF/cHi5n6jsLZ3/2HhSmtCv5NCltfQtlfuImmmYdzotpIudHN6+v7zxoaf3y+oOf3tZ+kqpqNWj0dAkUQe+p3EX7JN5vTr5X399tu321r98uuC6iaqoOK2E4WK0jr2NbW8GtPspmGymcpVUvvv/93wMsbN179t3n8V28MdKaStA8sor8ZVAuc7Js8/FeQOBqeLuzu29R24iBcXX45Cl7Z6lsSGWprAsQy7r7t6nw4GSh+5bmLUl6OQUtQ6KC/ETQLX5mKYJpYETSliFq2sXrojhQghu9Ww+PZXoPAhRzWZFdnGsa9QlBj1Ba3DhFZDNWQJnNdVXJdWX8rfrULaigRrcX2Lz/bRL12hwteicJuhpjnqoxX/52K3ClnQ8CUSNdXqOC9eoaK7bC1KMAwrTeAqRqowW06kitMT74ALtXHq0lkks6HB03ClGgdaUFgeTmGPj8yywnUVI6+QBX6JCR9Cv+ilxnMrLNvQWubqNAg50RYKdZ15U1m8SLMbz29XF+sfFJ6UFRqdvA3tMBYoHBcV0tax1ZTEizT4G57vVK6QfBcoHLVzNrR/9nCh5o2NYIYKs5QJxNLt/iq9YUGjaoWCqj571LmSMELHWt6GGlcYmnmFfH+BpdEiLYVrGgsa1UpUyBHzIsW5heOQrkbP/pBl4SEwvVg7zs83kwmU2C+P12mznquUGcZGs7R6LC+0V6cvFPtnULicKNzPVf7NViRLZ0oSuxUrRCNcVqha0ZjY1NUpaS+D4kWusJedyMhku/wtBaZFxipjBjmxBArV5nXnYtYK58uRVwoAXGE03yjUzXYkzUjLClWvUWlUJEeeSKFhGIfxKA7Y39LFxIaZecbiYENUp5EoNJqGVqFABbVHAhE8HhhsKCKB/Jo12ZgwrbVJAoVg58+6tXyeo1Z1uI1MWCje1gCrURvXw9ST8pjYktVLfdwUhI80u+HHGR4/JrczkD2MZAaQKWRRbV0rRYVTDDkM0VubVQK3X+FaJILU9AmF0eokhqI/9t7CwIeiVZykN7j3Sn5AbMdQNNw6lqVgq0vW5Vx7OJIJxFYn7MlqjIY6CisyIlsMZCJZSbKhx0Oqp8Oj9om8/OQrpNUr9ZzasIkby6rKGjpzhsfb+xqMceP7w+6KOiOhs8UsLWL7CLbf8Jr8iE25hWFFlU1THhPj7b2pgQ82d9KZ8E72/6y0Rkrbh2I3Zhhxq8KdFFkebitQVePZ5uGTeSB+Nh7bzyctWLRkSZPoIURhlXtF+8TjpZQnYRMuPsrMLjoORCbyN+dp2ETtSRTOKt0No66Fn1bImsQX2VPEdCi0IX9ruKpXuDoSpgRsllZqQ2qaHWlcyyocMYHZgbVFnsby0Xp/yXw1srlHLbZiNiQVf5NAJsfiLHQljp+59P8Yk9zbd53us419tl3yxrDQNXfWzUJ+bzQnVStU6EVsqaX9/hqWhas9LTTNvEIyjnOxgD2IRrfcN1+L+adnXM+qeMudh8z8HpYdAGIbgnhpFj+O0RW7a2m5ZsyLlk/GIv7aJnuWGHsT2VcBzwmlF1G5MJVgqcGPmS04HkJbuSNDBts1CL75MfmL8KxCy6t2o78CIbv9qXdYfkmGvWB/TkTVXOZQZsGDq8Rqb+NFcz1Tlt1kHp53GFa+CjlsQ4OIM96Pew0+p/h//CsKL4qWM6ZP14UfBCH+vQUftqZ6o6Xk1QRLZNuTePUorPgH3x4+vyAJhLSOlp14NAqCgBcyTn4OTdH8fICS8ckojuL0mxnpvpaS4fc4YTKvMCWVDYbYYTgbDmdhm9h2wYGWQbYTsraIPNGMKOFwGDrkV7xJLJJ+jJZ+kMb956NDT75dI09+nbf+xu2pZtWgZ/jVY/kNQBt20g4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADYMf8Hf53FUIW8Ve8AAAAASUVORK5CYII="
+                    alt="logo"
+                    className="h-12 w-12 rounded-full"
+                    />
+                    <Link
+                    
+                        className="flex-none font-semibold   font-bold uppercase  text-2xl text-white focus:outline-none focus:opacity-80 dark:text-white"
+                        href="/"
+                        aria-label="Brand"
+                    >
+                       DESIGNPRO
+                    </Link>
+                    {/* Collapse Button */}
+                    <button
+                        type="button"
+                        className="hs-collapse-toggle md:hidden relative size-9 flex justify-center items-center font-medium text-[12px] rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                        id="hs-header-base-collapse"
+                        aria-expanded="false"
+                        aria-controls="hs-header-base"
+                        aria-label="Toggle navigation"
+                        data-hs-collapse="#hs-header-base"
+                    >
+                        <svg
+                            className="hs-collapse-open:hidden size-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width={24}
+                            height={24}
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                        >
+                            <line x1={3} x2={21} y1={6} y2={6} />
+                            <line x1={3} x2={21} y1={12} y2={12} />
+                            <line x1={3} x2={21} y1={18} y2={18} />
+                        </svg>
+                        <svg
+                            className="hs-collapse-open:block shrink-0 hidden size-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width={24}
+                            height={24}
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                        >
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                        <span className="sr-only">Toggle navigation</span>
+                    </button>
+                    {/* End Collapse Button */}
+                </div>
                   {/* social - start */}
-                  <div className="flex gap-4">
+                  <div className="flex gap-4 p-5">
                     <a
                       href="#"
                       target="_blank"
@@ -254,7 +347,7 @@ const page = () => {
                 </div>
                 {/* nav - start */}
                 <div>
-                  <div className="mb-4 font-bold uppercase tracking-widest text-gray-800">
+                  <div className="mb-4 font-bold uppercase tracking-widest text-blue-800">
                     Products
                   </div>
                   <nav className="flex flex-col gap-4">
@@ -263,7 +356,7 @@ const page = () => {
                         href="/add-design"
                         className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
                       >
-                         Add Designs
+                        Add Designs
                       </a>
                     </div>
                     <div>
@@ -282,13 +375,13 @@ const page = () => {
                         Browse Design
                       </a>
                     </div>
-                   
+
                   </nav>
                 </div>
                 {/* nav - end */}
                 {/* nav - start */}
                 <div>
-                  <div className="mb-4 font-bold uppercase tracking-widest text-gray-800">
+                  <div className="mb-4 font-bold uppercase tracking-widest text-blue-800">
                     Company
                   </div>
                   <nav className="flex flex-col gap-4">
@@ -316,14 +409,14 @@ const page = () => {
                         Jobs
                       </a>
                     </div>
-                    
-                   
+
+
                   </nav>
                 </div>
                 {/* nav - end */}
                 {/* nav - start */}
                 <div>
-                  <div className="mb-4 font-bold uppercase tracking-widest text-gray-800">
+                  <div className="mb-4 font-bold uppercase tracking-widest text-blue-800">
                     Support
                   </div>
                   <nav className="flex flex-col gap-4">
@@ -351,13 +444,13 @@ const page = () => {
                         Login
                       </a>
                     </div>
-                   
+
                   </nav>
                 </div>
                 {/* nav - end */}
                 {/* nav - start */}
                 <div>
-                  <div className="mb-4 font-bold uppercase tracking-widest text-gray-800">
+                  <div className="mb-4 font-bold uppercase tracking-widest text-blue-800">
                     Legal
                   </div>
                   <nav className="flex flex-col gap-4">
